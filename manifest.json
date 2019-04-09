@@ -1,0 +1,40 @@
+{
+    "name": "Bookmark Reader",
+    "version": "1.0",
+    "description": "Build an tool to get bookmark on local computer and sync with Firebase.",
+    "manifest_version": 2,
+
+	"permissions": [
+          "bookmarks"
+    ],
+
+    "background": {
+        "scripts": [
+            "BookmarkBackground.js"
+        ],
+        "persistent": false
+    }, 
+
+    "browser_action": {
+      "default_title": "Bookmark Reader",
+      "default_icon": {
+            "16": "images/bookmark@1x.png",
+            "32": "images/bookmark@2x.png",
+            "48": "images/bookmark@3x.png",
+            "128": "images/bookmark@4x.png"
+        },
+      "default_popup": "popup.html"
+  	},
+
+    "icons": {
+        "16": "images/bookmark@1x.png",
+        "32": "images/bookmark@2x.png",
+        "48": "images/bookmark@3x.png",
+        "128": "images/bookmark@4x.png"
+    }, 
+
+    "content_security_policy": "script-src 'self' https://ajax.googleapis.com https://www.gstatic.com; object-src 'self'"
+}
+
+
+
